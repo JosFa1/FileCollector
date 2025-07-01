@@ -1,0 +1,86 @@
+body {
+    background: linear-gradient(#1e1e1e, #121212);
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 16px;
+    background: #222;
+    border: 3px solid #0ff;
+    box-shadow: 0 0 20px #0ff;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, button, textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    background: linear-gradient(90deg, #0ff, #09f);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background: #444;
+    cursor: not-allowed;
+}
+
+#chips {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.chip {
+    background: #333;
+    border: 1px solid #777;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+    position: relative;
+    transition: background 0.2s;
+}
+
+.chip:hover {
+    background: #555;
+}
+
+.chip .remove {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: red;
+    cursor: pointer;
+}
+
+.chip:hover .remove {
+    display: block;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background: #111;
+    border: 2px solid #0ff;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    display: none;
+}

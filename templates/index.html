@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Extension Extractor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Extractor</h1>
+        <input type="text" id="folderPath" placeholder="Enter folder path" oninput="checkStartReady()"><br>
+        <input type="text" id="extensionInput" placeholder="Enter file extension">
+        <button onclick="addExtension()">Add Extension</button>
+        <div id="chips"></div>
+        <button id="startBtn" onclick="startScan()" disabled>Start</button>
+        <button onclick="copyOutput()">Copy All</button>
+        <a href="#" onclick="document.getElementById('output').style.display='block'" style="color: gray; font-size: 12px">Show Output</a>
+        <div id="output"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
